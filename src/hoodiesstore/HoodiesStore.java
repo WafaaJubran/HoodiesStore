@@ -26,15 +26,15 @@ public class HoodiesStore {
             
     }   
     public static String getSize(double shoulders,double arms,double bust) {
-         if (shoulders == 49 && arms==54 && bust==100){
+         if (shoulders>=49 && shoulders <= 51 && arms>=52 && arms<=54 && bust>=98 && bust<=102){
          return "XS";}
-         else if (shoulders == 51 && arms==54.5 && bust==104 ){
+         else if (shoulders>=52 && shoulders <= 54 && arms>=55 && arms<=57 && bust>=103 && bust<=107){
           return "S";}
-         else if (shoulders == 53 && arms==55 && bust==108 ){
+         else if (shoulders>=55 && shoulders <= 57 && arms>=58 && arms<=60 && bust>=108 && bust<=112){
              return "M"; }
-         else if (shoulders == 55 && arms==55.5 && bust==114){
+         else if (shoulders>=58 && shoulders <= 60 && arms>=61 && arms<=63 && bust>=113 && bust<=117){
              return "L";}
-         else if (shoulders == 57 && arms==56 && bust==120 ){
+         else if (shoulders>=61 && shoulders <= 63 && arms>=64 && arms<=66 && bust>=118 && bust<=122){
              return "XL";} 
                   else{
                 return "Sorry;we don’t have that size";
