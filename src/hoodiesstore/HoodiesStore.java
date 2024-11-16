@@ -21,9 +21,14 @@ public class HoodiesStore {
             double arms=input.nextDouble();
         System.out.println("enter the bust measurement: " );
             double bust=input.nextDouble();
-         String size=getSize(shoulders, arms, bust);
-            System.out.println("your size is: " +size);
             
+            input.nextLine();
+        System.out.println("enter your undertone(warm, cool or neutral): " );
+            String UserUndertone=input.nextLine();
+            String size=getSize(shoulders, arms, bust);
+        System.out.println("your size is: " +size);
+            String result=Undertone(UserUndertone);
+        System.out.println("the colors that suit you more: " +result);  
     }   
     public static String getSize(double shoulders,double arms,double bust) {
          if (shoulders>=49 && shoulders <= 51 && arms>=52 && arms<=54 && bust>=98 && bust<=102){
@@ -45,7 +50,17 @@ public class HoodiesStore {
                   else{
                 return "Sorry;we don’t have that size";
              }
-    }    }
+    }  
+    public static String Undertone(String UserUndertone){
+        if(UserUndertone.equalsIgnoreCase("warm")){
+            return "The warm colors suit you more";}
+        else if(UserUndertone.equalsIgnoreCase("cool")){
+            return "The cool colors suit you more";}
+        else{
+            return "you have neutral undertone, both warm and cool colors suit you";}
+        }
+    }
+
 
 
 
