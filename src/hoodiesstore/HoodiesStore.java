@@ -36,6 +36,12 @@ public class HoodiesStore {
              return "L";}
          else if (shoulders>=61 && shoulders <= 63 && arms>=64 && arms<=66 && bust>=118 && bust<=122){
              return "XL";} 
+         else if (shoulders>=64 && shoulders <= 66 && arms>=67 && arms<=69 && bust>=123 && bust<=125){
+             return "XXL";}
+         else if (shoulders>=67 && shoulders <= 69 && arms>=70 && arms<=72 && bust>=126 && bust<=128){
+             return "XXXL";}
+         else if (shoulders>=70&& shoulders <= 72 && arms>=73 && arms<=75 && bust>=129 && bust<=131){
+             return "XXXXL";}
                   else{
                 return "Sorry;we don’t have that size";
              }
