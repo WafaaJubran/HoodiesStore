@@ -54,13 +54,13 @@ public class HoodiesStoreIT {
      @Test
     public void testcase2() {
         String expResult = "S";
-        String result = HoodiesStore.getSize(51, 54.5, 104);
+        String result = HoodiesStore.getSize(52, 55.5, 104);
         assertEquals(expResult, result);
     }
        @Test
     public void testcase3() {
         String expResult = "M";
-        String result = HoodiesStore.getSize(53, 55, 108);
+        String result = HoodiesStore.getSize(56, 59, 108);
         assertEquals(expResult, result);
     }
       @Test
@@ -72,9 +72,28 @@ public class HoodiesStoreIT {
        @Test
     public void testcase5() {
         String expResult = "XL";
-        String result = HoodiesStore.getSize(57, 56, 120);
+        String result = HoodiesStore.getSize(61, 66, 118.51542);
         assertEquals(expResult, result);       
-    }}
+    }
+    @Test
+    public void testcase6() {
+        String expResult = "XXL";
+        String result = HoodiesStore.getSize(64.5, 67.5, 123.5);
+        assertEquals(expResult, result);       
+    }   
+    @Test
+    public void testcase7() {
+        String expResult = "XXXL";
+        String result = HoodiesStore.getSize(69, 72, 128);
+        assertEquals(expResult, result);       
+    }  
+    @Test
+    public void testcase8() {
+        String expResult = "XXXXL";
+        String result = HoodiesStore.getSize(71.5, 73, 130.5);
+        assertEquals(expResult, result);       
+    }
+}
 
 
 
